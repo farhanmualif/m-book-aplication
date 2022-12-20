@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".activity.detail.DetailActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/detail_buku"
+        android:gravity="center_horizontal"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginBottom="50dp"
+        />
+
+
+    <TextView
+        android:id="@+id/et_code"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/code"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/et_judul"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/judul"
+        android:textSize="18sp"/>
+    <TextView
+        android:id="@+id/et_pengarang"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/pengarang"
+        android:textSize="18sp"/>
+    <TextView
+        android:id="@+id/et_tahun_terbit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/tahun_terbit"
+        android:textSize="18sp"/>
+    <TextView
+        android:id="@+id/et_kota_terbit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/kota_terbit"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/isi_konten"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/konten"
+        android:textSize="18sp"
+        android:textColor="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_marginStart="10dp"
+            android:id="@+id/btn_update_det"
+            android:backgroundTint="@color/teal_700"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/update_data"/>
+
+
+        <Button
+            android:id="@+id/btn_delete_det"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/red"
+            android:layout_marginLeft="20dp"
+            android:text="delete"/>
+    </LinearLayout>
+</LinearLayout>

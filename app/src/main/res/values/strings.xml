@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Books</string>
+    <string name="judul">Judul</string>
+    <string name="add_circle">add_circle</string>
+    <string name="code">Code</string>
+    <string name="pengarang">pengarang</string>
+    <string name="tahun_terbit">Tahun Terbit</string>
+    <string name="kota_terbit">Kota Terbit</string>
+    <string name="sampul">Sampul</string>
+    <string name="konten">Konten</string>
+    <string name="submit">Submit</string>
+    <string name="tambah_data_buku">Tambah Data Buku</string>
+    <string name="update_buku">Update Buku</string>
+    <string name="detail_buku">Detail Buku</string>
+    <string name="update_data">Update data</string>
+    <string name="ini_adalah_gambar">ini adalah gambar</string>
+</resources>

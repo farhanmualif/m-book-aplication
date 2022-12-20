@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:layout_margin="15dp"
+    tools:context=".activity.edit.BookEdit">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/update_buku"
+        android:gravity="center_horizontal"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginBottom="50dp"
+        />
+
+<!--    <ImageView-->
+<!--        android:id="@+id/image_view"-->
+<!--        android:layout_width="93dp"-->
+<!--        android:layout_height="159dp"-->
+<!--        android:layout_gravity="center_horizontal"-->
+<!--        android:layout_marginBottom="20dp" />-->
+
+    <EditText
+        android:id="@+id/et_code_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/code"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/et_judul_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/judul"
+        android:textSize="18sp"/>
+    <EditText
+        android:id="@+id/et_pengarang_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/pengarang"
+        android:textSize="18sp"/>
+    <EditText
+        android:id="@+id/et_tahun_terbit_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/tahun_terbit"
+        android:textSize="18sp"/>
+    <EditText
+        android:id="@+id/et_kota_terbit_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/kota_terbit"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/isi_konten_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/konten"
+        android:lines="3"
+        android:textSize="18sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="save"
+            android:layout_margin="20dp"
+            android:layout_marginTop="20dp"
+            />
+    </LinearLayout>
+
+
+
+</LinearLayout>
