@@ -20,36 +20,13 @@
         android:layout_marginBottom="50dp"
         />
 
-    <EditText
-        android:id="@+id/et_code"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/code"
-        android:textSize="18sp"/>
+
 
     <EditText
         android:id="@+id/et_judul"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/judul"
-        android:textSize="18sp"/>
-    <EditText
-        android:id="@+id/et_pengarang"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/pengarang"
-        android:textSize="18sp"/>
-    <EditText
-        android:id="@+id/et_tahun_terbit"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/tahun_terbit"
-        android:textSize="18sp"/>
-    <EditText
-        android:id="@+id/et_kota_terbit"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/kota_terbit"
         android:textSize="18sp"/>
 
     <EditText
@@ -68,9 +45,5 @@
         android:layout_margin="20dp"
         android:layout_marginTop="20dp"
         />
-
-
-
-
 
 </LinearLayout>

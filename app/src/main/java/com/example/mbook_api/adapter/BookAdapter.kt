@@ -32,15 +32,10 @@ class BookAdapter(private val dataList: ArrayList<BookModel>): RecyclerView.Adap
             val ctx = holder.contex
             val intent = Intent(ctx,DetailActivity::class.java)
             intent.putExtra("ID", item.id.toString())
-            intent.putExtra("CODE", item.code.toString())
             intent.putExtra("JUDUL", item.judul.toString())
-            intent.putExtra("PENGARANG", item.pengarang.toString())
-            intent.putExtra("TAHUN_TERBIT", item.tahun_terbit.toString())
-            intent.putExtra("KOTA_TERBIT", item.kota_terbit.toString())
             intent.putExtra("ISI_KONTEN", item.isi_konten.toString())
             ctx.startActivity(intent)
         }
-
     }
     override fun getItemCount(): Int = dataList.size
 

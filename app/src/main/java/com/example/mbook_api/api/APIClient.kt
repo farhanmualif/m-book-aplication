@@ -6,7 +6,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 object APIClient {
-    public const val BASE_URL = "http://192.168.1.18/book-api/public/"
+    public const val BASE_URL = "http://192.168.1.12/book-api/public/"
 
     fun create() : APIInterface {
         val retrofit = Retrofit.Builder()

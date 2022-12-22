@@ -28,10 +28,6 @@ class AddBook : AppCompatActivity() {
     }
 
     fun createBooksData() {
-        val code: EditText = findViewById(R.id.et_code)
-        val pengarang: EditText = findViewById(R.id.et_pengarang)
-        val kotaTerbit: EditText = findViewById(R.id.et_kota_terbit)
-        val tahunTerbit: EditText = findViewById(R.id.et_tahun_terbit)
         val isiKonten: EditText = findViewById(R.id.isi_konten)
         val judul: EditText = findViewById(R.id.et_judul)
         val btnSubmit: Button = findViewById(R.id.btn_submit)
@@ -41,30 +37,14 @@ class AddBook : AppCompatActivity() {
 
         btnSubmit.setOnClickListener {
 
-            if (code.text.toString().isEmpty()){
-                code.error = "code tidak boleh kosong"
-            }
-            if (pengarang.text.toString().isEmpty()){
-                pengarang.error = "pengarang tidak boleh kosong"
-            }
-            if (tahunTerbit.text.toString().isEmpty()){
-                tahunTerbit.error = "tahunTerbit tidak boleh kosong"
-            }
             if (isiKonten.text.toString().isEmpty()){
                 isiKonten.error = "isiKonten tidak boleh kosong"
             }
             if (judul.text.toString().isEmpty()){
                 judul.error = "judul tidak boleh kosong"
             }
-            if (kotaTerbit.text.toString().isEmpty()){
-                kotaTerbit.error = "kotaTerbit tidak boleh kosong"
-            }
             val sendData = apiClient.createBooks(
-                code.text.toString(),
                 judul.text.toString(),
-                pengarang.text.toString(),
-                tahunTerbit.text.toString(),
-                kotaTerbit.text.toString(),
                 isiKonten.text.toString(),
             )
             sendData.enqueue(object : Callback<BookModel> {

@@ -9,7 +9,6 @@
     android:layout_margin="15dp"
     tools:context=".activity.edit.BookEdit">
 
-
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -21,43 +20,11 @@
         android:layout_marginBottom="50dp"
         />
 
-<!--    <ImageView-->
-<!--        android:id="@+id/image_view"-->
-<!--        android:layout_width="93dp"-->
-<!--        android:layout_height="159dp"-->
-<!--        android:layout_gravity="center_horizontal"-->
-<!--        android:layout_marginBottom="20dp" />-->
-
-    <EditText
-        android:id="@+id/et_code_up"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/code"
-        android:textSize="18sp"/>
-
     <EditText
         android:id="@+id/et_judul_up"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/judul"
-        android:textSize="18sp"/>
-    <EditText
-        android:id="@+id/et_pengarang_up"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/pengarang"
-        android:textSize="18sp"/>
-    <EditText
-        android:id="@+id/et_tahun_terbit_up"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/tahun_terbit"
-        android:textSize="18sp"/>
-    <EditText
-        android:id="@+id/et_kota_terbit_up"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/kota_terbit"
         android:textSize="18sp"/>
 
     <EditText

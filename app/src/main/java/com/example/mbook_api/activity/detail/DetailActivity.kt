@@ -27,38 +27,23 @@ class DetailActivity : AppCompatActivity() {
         detailBook()
     }
     private fun detailBook() {
-        val code: TextView = findViewById(R.id.et_code)
-        val pengarang: TextView = findViewById(R.id.et_pengarang)
-        val kotaTerbit: TextView = findViewById(R.id.et_kota_terbit)
-        val tahunTerbit: TextView = findViewById(R.id.et_tahun_terbit)
         val isiKonten: TextView = findViewById(R.id.isi_konten)
         val judul: TextView = findViewById(R.id.et_judul)
         val btnDelete : Button = findViewById(R.id.btn_delete_det)
 
-        val kode = intent.getStringExtra("CODE")
+
         val Judul = intent.getStringExtra("JUDUL")
-        val Pengarang = intent.getStringExtra("PENGARANG")
-        val th_terbit = intent.getStringExtra("TAHUN_TERBIT")
-        val kt_terbit = intent.getStringExtra("KOTA_TERBIT")
         val isi_konten = intent.getStringExtra("ISI_KONTEN")
         val id = intent.getStringExtra("ID")
 
-        code.text = kode.toString()
         judul.text = Judul.toString()
-        pengarang.text = Pengarang.toString()
-        tahunTerbit.text = th_terbit.toString()
-        kotaTerbit.text = kt_terbit.toString()
         isiKonten.text = isi_konten.toString()
 
         val btn_update : Button = findViewById(R.id.btn_update_det)
 
         btn_update.setOnClickListener {
             val intent = Intent(this@DetailActivity,BookEdit::class.java)
-            intent.putExtra("KODE_UP", kode)
             intent.putExtra("JUDUL_UP", Judul)
-            intent.putExtra("PENGARANG_UP", Pengarang)
-            intent.putExtra("TAHUN_TERBIT_UP", th_terbit)
-            intent.putExtra("KOTA_TERBIT_UP", kt_terbit)
             intent.putExtra("ISI_KONTEN_UP", isi_konten)
             intent.putExtra("ID", id)
             startActivity(intent)

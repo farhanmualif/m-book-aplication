@@ -7,7 +7,8 @@ import android.os.Handler
 import android.os.Looper
 import android.view.WindowManager
 import com.example.mbook_api.R
-import com.example.mbook_api.activity.dashboard.DashboardActivity
+import com.example.mbook_api.activity.mainActivity.MainActivity
+
 
 class SplashScreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,7 +20,7 @@ class SplashScreen : AppCompatActivity() {
         )
 
         Handler(Looper.getMainLooper()).postDelayed({
-            val intent = Intent(this, DashboardActivity::class.java)
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
             finish()
         }, 3000)

@@ -12,6 +12,6 @@
     <string name="tambah_data_buku">Tambah Data Buku</string>
     <string name="update_buku">Update Buku</string>
     <string name="detail_buku">Detail Buku</string>
-    <string name="update_data">Update data</string>
+    <string name="update_data">Update</string>
     <string name="ini_adalah_gambar">ini adalah gambar</string>
 </resources>

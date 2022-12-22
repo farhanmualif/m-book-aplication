@@ -33,12 +33,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".activity.dashboard.DashboardActivity"
-            android:exported="false"/>
-        <activity
-            android:name=".activity.edit.FormUpload"
-            android:exported="false" />
+
         <activity
             android:name=".activity.edit.BookEdit"
             android:exported="false" />
@@ -52,9 +47,7 @@
             android:parentActivityName=".activity.mainActivity.MainActivity" />
         <activity
             android:name=".activity.mainActivity.MainActivity"
-            android:exported="false"
-            android:label=""
-            android:parentActivityName=".activity.dashboard.DashboardActivity" />
+            android:exported="false" />
     </application>
 
 </manifest>

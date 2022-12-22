@@ -16,11 +16,7 @@ interface APIInterface {
     @FormUrlEncoded
     @POST("books")
     fun createBooks(
-        @Field("code") code: String,
         @Field("judul") judul: String,
-        @Field("pengarang") pengarang: String,
-        @Field("tahun_terbit") tahun_terbit: String,
-        @Field("kota_terbit") kota_terbit: String,
         @Field("isi_konten") isi_konten: String,
     ) : Call<BookModel>
 
@@ -28,11 +24,7 @@ interface APIInterface {
     @PUT("books/{id}")
     fun updateBooks(
         @Path("id")id: Int?,
-        @Field("kode")kode: String,
         @Field("judul")judul: String,
-        @Field("pengarang")pengarang: String,
-        @Field("tahun_terbit")tahun_terbit: String,
-        @Field("kota_terbit")kota_terbit: String,
         @Field("isi_konten")isi_konten: String,
     ) : Call<BookModel>
 

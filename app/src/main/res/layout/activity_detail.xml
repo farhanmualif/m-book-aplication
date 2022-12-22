@@ -19,36 +19,12 @@
         />
 
 
-    <TextView
-        android:id="@+id/et_code"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:text="@string/code"
-        android:textSize="18sp"/>
 
     <TextView
         android:id="@+id/et_judul"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:text="@string/judul"
-        android:textSize="18sp"/>
-    <TextView
-        android:id="@+id/et_pengarang"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:text="@string/pengarang"
-        android:textSize="18sp"/>
-    <TextView
-        android:id="@+id/et_tahun_terbit"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:text="@string/tahun_terbit"
-        android:textSize="18sp"/>
-    <TextView
-        android:id="@+id/et_kota_terbit"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:text="@string/kota_terbit"
         android:textSize="18sp"/>
 
     <TextView
